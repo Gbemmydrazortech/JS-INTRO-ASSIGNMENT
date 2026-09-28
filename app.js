@@ -26,7 +26,7 @@ let totalScore = 0;
  totalScore = totalScore + 45;
  console.log("Total Score: " + totalScore);
  
- totalScore = totalScore + 30;
+ totalScore += 30;
  console.log("Total Score: " + totalScore);
  
  totalScore = totalScore - 5;
@@ -53,7 +53,7 @@ let studentName = 101;
 studentAge = parseInt(studentAge);
 console.log("Student Age: " + studentAge + " (Type: " + typeof studentAge + ")");
 
-/*Using parseFloat because examScore should be a decimal and not whole numbers.*/
+/*Using parseFloat because examScore may contain decimals.*/
 
 examScore = parseFloat(examScore);
 console.log("Exam Score: " + examScore + " (Type: " + typeof examScore + ")");
